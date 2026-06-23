@@ -15,12 +15,7 @@ class ExampleProvider : MainAPI() { // All providers must be an instance of Main
     override val hasMainPage = true
 
     // This function gets called when you search for something
-    override suspend fun search(query: String): List<SearchResponse> {
-        return listOf()
-    }
-
     
-
     override suspend fun search(query: String): List<SearchResponse> {
 
         val res = app.get(
